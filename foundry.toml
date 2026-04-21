@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+ut = "out"
+libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/"
+]
+
+# Load environment variables from .env automatically
+dotenv = ".env"
+
+# ─── Arc Testnet RPC ─────────────────────────────────────────────────────────
+[rpc_endpoints]
+arc_testnet = "https://rpc.testnet.arc.network"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
